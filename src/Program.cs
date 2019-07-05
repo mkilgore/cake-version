@@ -13,5 +13,10 @@ namespace foo
         {
             return true;
         }
+
+        public static bool FooBar2()
+        {
+            return false;
+        }
     }
 }
