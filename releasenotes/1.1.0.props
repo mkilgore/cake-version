@@ -1,0 +1,10 @@
+<Project>
+    <PropertyGroup>
+        <PackageReleaseNotes>
+Version: 1.1.0
+
+Notes:
+    Added FooBar2() method
+        </PackageReleaseNotes>
+    </PropertyGroup>
+</Project>
