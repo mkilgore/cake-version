@@ -8,5 +8,10 @@ namespace foo
         {
             Console.WriteLine("Hello Everyone!");
         }
+
+        public static bool FooBar()
+        {
+            return true;
+        }
     }
 }
