@@ -11,7 +11,7 @@ namespace foo
 
         public static bool FooBar()
         {
-            return true;
+            return false;
         }
 
         public static bool FooBar2()
