@@ -1,0 +1,7 @@
+<Project>
+    <PropertyGroup>
+        <PackageReleaseNotes>
+This is a Continuous Integration build.
+        </PackageReleaseNotes>
+    </PropertyGroup>
+</Project>
