@@ -5,13 +5,13 @@ bool isTaggedRelease = false;
 FilePath releaseNotesPropsFile = null;
 string version;
 
-CalculateVersions();
+SetVersionVariables();
 
 MsBuildFlags = MsBuildFlags
     .SetVersion(version)
     .SetInformationalVersion(version);
 
-public void CalculateVersions()
+public void SetVersionVariables()
 {
     DirectoryPath RepoDirectory = MakeAbsolute(GitFindRootFromPath("."));
     string lastTag = GitDescribe(RepoDirectory, false, GitDescribeStrategy.Tags, 0);
