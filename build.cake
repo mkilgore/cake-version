@@ -46,14 +46,10 @@ Task("Test")
 Task("Pack")
     .IsDependentOn("Build")
     .Does(() => {
-        SolutionParserResult parsedSolution = ParseSolution(solution);
-
-        foreach (SolutionProject project in parsedSolution.Projects)
-            DotNetCorePack(project.Path.FullPath, new DotNetCorePackSettings {
-                MSBuildSettings = MsBuildFlags,
-                Configuration = configuration,
-                OutputDirectory = outputDir,
-            });
+        DotNetCorePack(solution, new DotNetCorePackSettings {
+            MSBuildSettings = MsBuildFlags,
+            OutputDirectory = outputDir,
+        });
     });
 
 Task("Push")
