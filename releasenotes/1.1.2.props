@@ -1,0 +1,10 @@
+<Project>
+    <PropertyGroup>
+        <PackageReleaseNotes>
+Version: 1.1.2
+
+Notes:
+    Adjusted version.cake script
+        </PackageReleaseNotes>
+    </PropertyGroup>
+</Project>
